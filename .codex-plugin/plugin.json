@@ -1,0 +1,19 @@
+{
+  "name": "gitee-code-review",
+  "version": "0.1.0",
+  "description": "Independent Gitee pull request review workbench for Codex.",
+  "license": "MIT",
+  "keywords": ["gitee", "code-review", "pull-requests", "mcp-app"],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Gitee Code Review",
+    "shortDescription": "Review Gitee pull requests in Codex",
+    "longDescription": "Browse Gitee pull requests, inspect diffs and discussions, run evidence-based reviews in your Codex conversation, keep findings private, and explicitly publish revision-checked review comments. Independent community plugin, not affiliated with OpenAI or Gitee.",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "brandColor": "#c73234",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "defaultPrompt": ["Open Gitee Code Review", "Review this Gitee pull request"]
+  }
+}

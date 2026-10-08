@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gitee Code Review</title><!-- STYLE --></head>
+<body>
+  <header class="topbar"><div class="brand"><i data-lucide="git-pull-request" aria-hidden="true"></i><strong>Gitee Code Review</strong></div><div class="account"><span id="account">连接中</span><button id="refresh" class="icon" title="刷新" aria-label="刷新"><i data-lucide="refresh-cw"></i></button></div></header>
+  <div id="notice" role="status" hidden></div>
+  <form id="url-form" class="urlbar"><i data-lucide="link" aria-hidden="true"></i><input id="url" aria-label="Gitee PR 地址" placeholder="https://gitee.com/owner/repo/pulls/7" autocomplete="off"><button type="submit">打开 PR</button></form>
+  <div class="workspace">
+    <aside class="sidebar" aria-label="Pull Requests">
+      <div class="filters"><label class="sr-only" for="repository">仓库</label><select id="repository"><option value="">选择仓库</option></select><label class="sr-only" for="state">PR 状态</label><select id="state"><option value="open">待处理</option><option value="merged">已合并</option><option value="closed">已关闭</option><option value="all">全部</option></select><input id="search" aria-label="搜索当前页 PR" placeholder="搜索当前页 PR"></div>
+      <div class="list-label"><span>Pull Requests</span><span id="count">0</span></div><div id="pr-list" class="pr-list"><p class="empty">暂无 Pull Request</p></div><button id="more" class="more" hidden>加载更多 PR</button><button id="more-repos" class="more" hidden>加载更多仓库</button>
+    </aside>
+    <main id="main"><div class="start empty"><i data-lucide="git-pull-request" aria-hidden="true"></i><h1>Pull Requests</h1><p>未选择 PR</p></div></main>
+  </div>
+  <dialog id="publish-dialog"><form method="dialog"><div class="dialog-header"><h2>发布审查评论</h2><button class="icon" aria-label="关闭" title="关闭" value="cancel"><i data-lucide="x"></i></button></div><p id="publish-target" class="muted"></p><pre id="publish-preview"></pre><div class="dialog-actions"><button value="cancel">取消</button><button id="confirm-publish" class="primary" type="button">确认发布</button></div></form></dialog>
+  <!-- SCRIPT -->
+</body>
+</html>

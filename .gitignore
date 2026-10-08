@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+*.zip
+coverage/
+evidence/
+.DS_Store
+*.pem
+*.key
+auth.json
+state.json
+snapshots/
+reviews/
